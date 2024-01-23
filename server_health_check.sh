@@ -11,6 +11,14 @@ check_cpu() {
 	echo "5-minute Load Average: $load5"
 	echo "15-minute Load Average: $load15"
 }
+
+check_memory() {
+	echo "Memory Usage:"
+    free -h | awk 'NR==2{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
+    echo "Swap Usage:"
+    free -h | awk '/Swap/{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
+}
 	
 check_cpu
-	
+check_memory
+
