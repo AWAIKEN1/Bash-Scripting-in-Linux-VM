@@ -18,7 +18,18 @@ check_memory() {
     echo "Swap Usage:"
     free -h | awk '/Swap/{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
 }
-	
+
+show_uptime() {
+	up=$(uptime -p | cut -c4- )
+	since=$(uptime -s)
+	cat << EOF
+-----
+This machine has been up for ${up}
+It has been running since ${since}
+-----
+EOF
+}
+
 check_cpu
 check_memory
-
+show_uptime
