@@ -11,7 +11,8 @@ The server health check script is a Bash script designed to assess and report on
 ### Features
 - **CPU Load Check**: Reports the 1-minute, 5-minute, and 15-minute load averages.
 - **Memory Usage Check**: Displays the total, used, and free memory.
-- More features to be added as I progress in my learning.
+- **Machine Uptime Check**: Displays how long your Linux VM has been running since it was initially booted. 
+More features to be added as I progress in my learning.
 
 ## Getting Started
 
