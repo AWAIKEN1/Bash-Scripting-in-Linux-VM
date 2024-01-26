@@ -45,9 +45,6 @@ check_network() {
     done
 }
 
-check_network
-
-
 check_cpu
 check_memory
 show_uptime
