@@ -12,6 +12,7 @@ The server health check script is a Bash script designed to assess and report on
 - **CPU Load Check**: Reports the 1-minute, 5-minute, and 15-minute load averages.
 - **Memory Usage Check**: Displays the total, used, and free memory.
 - **Machine Uptime Check**: Displays how long your Linux VM has been running since it was initially booted. 
+- **Network Statistics**:Provides a comprehensive overview of the network interfaces and traffic statistics on your Linux server. Shows all the  network interfaces available on the server, including their status (up or down), IP addresses, and other relevant configurations. It shows the traffic statistics, detailing the amount of data received (RX) and transmitted (TX) on each network interfaces.
 More features to be added as I progress in my learning.
 
 ## Getting Started

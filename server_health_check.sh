@@ -30,6 +30,25 @@ It has been running since ${since}
 EOF
 }
 
+check_network() {
+    echo "Network Status:"
+    for interface in $(ls /sys/class/net/ | grep -v lo); do
+        echo "Interface: $interface"
+        local status=$(cat /sys/class/net/$interface/operstate)
+        echo "Status: $status"
+        local addr=$(ip addr show $interface | grep 'inet ' | awk '{print $2}')
+        echo "IP Address: ${addr:-None}"
+        local rx=$(cat /sys/class/net/$interface/statistics/rx_bytes)
+        local tx=$(cat /sys/class/net/$interface/statistics/tx_bytes)
+        echo "RX bytes: $rx, TX bytes: $tx"
+        echo "-----------------------------------"
+    done
+}
+
+check_network
+
+
 check_cpu
 check_memory
 show_uptime
+check_network
