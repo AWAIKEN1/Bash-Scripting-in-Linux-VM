@@ -14,6 +14,7 @@ The server health check script is a Bash script designed to assess and report on
 - **Machine Uptime Check**: Displays how long your Linux VM has been running since it was initially booted. 
 - **Network Statistics**:Provides a comprehensive overview of the network interfaces and traffic statistics on your Linux server. Shows all the  network interfaces available on the server, including their status (up or down), IP addresses, and other relevant configurations. It shows the traffic statistics, detailing the amount of data received (RX) and transmitted (TX) on each network interfaces.
 More features to be added as I progress in my learning.
+- **Check Software Updates**: Displays information about available software updates on a Linux seerver using the APT pacakge manager. It uses APT to refresh the package lists and simulate the upgrate process, providing information on available software updates without making any actual changes tot the system. 
 
 ## Getting Started
 

@@ -49,8 +49,14 @@ check_network() {
 }
 
 #Function to ensure software's packages are up to date
+check_updates() {
+	echo "Available Software Updates:"
+	sudo apt-get update
+	sudo apt-get -s upgrade
+}
 
 check_cpu
 check_memory
 show_uptime
 check_network
+check_updates
