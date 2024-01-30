@@ -48,6 +48,8 @@ check_network() {
     done
 }
 
+#Function to ensure software's packages are up to date
+
 check_cpu
 check_memory
 show_uptime
