@@ -48,6 +48,12 @@ check_network() {
     done
 }
 
+#Function to check disk usage
+check_disc() {
+	echo "Disk Usage"
+	df -h | awk '$NF=="/"{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
+}
+
 #Function to ensure software's packages are up to date
 check_updates() {
 	echo "Available Software Updates:"
@@ -59,4 +65,5 @@ check_cpu
 check_memory
 show_uptime
 check_network
+check_disc
 check_updates
