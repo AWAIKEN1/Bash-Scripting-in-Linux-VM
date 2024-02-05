@@ -61,9 +61,17 @@ check_updates() {
 	sudo apt-get -s upgrade
 }
 
+#Function to check users currently logged in
+check_users() {
+	echo "Currently logged in Users:"
+	who
+	echo "---------------------------------"
+}
+
 check_cpu
 check_memory
 show_uptime
 check_network
 check_disc
 check_updates
+check_users
