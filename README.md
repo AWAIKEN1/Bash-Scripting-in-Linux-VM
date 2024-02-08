@@ -44,6 +44,7 @@ More features to be added as I progress in my learning.
    ```
 
 ## Learning Journey
+
 This repository is part of my ongoing learning journey in Linux system administration and Bash scripting. As I continue to learn and experiment, I will update this repository with new scripts and enhancements to existing ones.
 
 ## Contributions
