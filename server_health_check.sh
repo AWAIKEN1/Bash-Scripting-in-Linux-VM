@@ -68,10 +68,19 @@ check_users() {
 	echo "---------------------------------"
 }
 
-check_cpu
-check_memory
-show_uptime
-check_network
-check_disc
-check_updates
-check_users
+
+#Main function
+main() {
+	echo "Server health check"
+	echo "-------------------------------"
+	check_cpu
+	check_memory
+	show_uptime
+	check_network
+	check_disc
+	check_updates
+	check_users
+}
+
+main
+
