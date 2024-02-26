@@ -18,6 +18,7 @@ More features to be added as I progress in my learning.
 - **Disk usage check**: This feature provides insight into the storage utilisation on your Linux server. Using the 'df' command to gather information about the disk space usage focusing on the root file system("/"). Showcases the total, used and free disk space.  
 - **User check**: This function will show you what users are currently logged into the Linux Virtual Machine
 
+I have added a main function in the script for clearer understanding
 
 ## Getting Started
 
