@@ -20,7 +20,13 @@ More features to be added as I progress in my learning.
 
 I have added a main function in the script for clearer understanding
 
+## Server status checker script
+
 ## Getting Started
+
+## Description 
+The purpose of the web server status checker script is to monitor the availability of web servers that are critical to your infrastructure or services. For testing purposes I will use public accessible websites. 
+
 
 ### Prerequisites
 - Access to a Linux server or a virtual machine where Bash scripts can be executed.
