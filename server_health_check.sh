@@ -15,9 +15,10 @@ check_cpu() {
 #Function to check memory usage
 check_memory() {
 	echo "Memory Usage:"
-    free -h | awk 'NR==2{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
-    echo "Swap Usage:"
-    free -h | awk '/Swap/{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}'
+	mem_info=$(free -h)
+	awk 'NR==2{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}' <<< "$mem_info"
+    	echo "Swap Usage:"
+    	awk '/Swap/{printf "Total: %s\tUsed: %s\tFree: %s\n", $2, $3, $4}' <<< "$mem_info"
 }
 
 #Function to display system uptime 
